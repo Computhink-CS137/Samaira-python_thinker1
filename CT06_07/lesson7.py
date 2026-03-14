@@ -48,7 +48,7 @@ age = input("how old are you?")
 # non f string
 # print("hello" + name + ", you are" + age + "years old!")
 # f string way
-print(f"Hello, {name}), you are, {age}, years old!")
+#print(f"Hello, {name}), you are, {age}, years old!")
 #  in f strings you dont need plus signes you just use commas to space them out, 
 # and you use the curvy brackets next to the letter "p" to hold you variable
 

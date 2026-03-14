@@ -70,7 +70,7 @@
 # # randint stands for random integer(only chooses integers)
 # print(rand_num)
 
-# task 2b
+# # task 2b
 # import random
 # for i in range(20):
 #     rand_num = random.randint(0, 999)
@@ -105,9 +105,87 @@
 #     num1 = random.randint(1, 10)
 #     num2 = random.randint(1, 10)
 #     answer = num1 * num2
-#     inpUt = int(input("what is " + str(num1)  + " times " + str(num2) + " ?"))
-#     print(inpUt == answer )
-#     print("the answer is " + str(answer))
+#     inpUt = input("what is " + str(num1)  + " times " + str(num2) + " ?")
+#     inpUt = int(inpUt)
+#     if inpUt == answer:
+#         print("correct")
+#     else:
+#         print("wrong")
+#     print("the right answer is " + str(answer))
+
+
+# # if else function
+# example
+# if 1 == 1:
+#     print("correct")
+# else:
+#     print("worng")
+
+# modulous
+# using the percent sign just like divide but its taking the remainder instead of quotiont
+
+#  task 7
+# number = int(input("enter a number and I will tell you if its even or odd \n"))
+# remainder = number % 2
+# if remainder == 1:
+#     print("your number is odd")
+# if remainder == 0:
+#     print("your number is even")
+
+#  task 8
+# num1 = int(input("can you type a number \n"))
+# num2 = int(input("can you type a second smaller number \n"))
+# remainder = num1 % num2
+# if remainder == 0:
+#     print(str(num1) + " is a multiple of " + str(num2) )
+# else:
+#     print(str(num1) + " is not a multiple of " + str(num2) )
+
+#  task"9" extension(Gk quiz)
+# score = 0
+# ans1 = input("what is the capital of Haiti \n").lower()
+# if ans1 == "port au prince":
+#     print("correct") 
+#     score = score + 1 
+# else:
+#     print("wrong")
+#     print("The answer is Port Au Prince")
+# ans2 = input(" what is the country with the most timezones? \n").lower()
+# if ans2 == "france":
+#     print("correct")
+#     score = score + 1
+# else:
+#     print("wrong")
+#     print(" the answer is France")
+# ans3 = input(" what is the capital of equador \n").lower()
+# if ans3 == "quito":
+#     print("correct")
+#     score = score + 1 
+# else:
+#     print("wrong")
+#     print("the answer is Quito")
+# print(" your final score is " + str(score) + "/3")
+
+#  task 10 extension guess the number game
+import random
+number = random.randint(1, 100)
+print(" guess my random number with 5 attempts, it is between 1 and 100")
+attempts = 5
+for i in range(attempts):
+    guess = int(input("what do you guess? \n"))
+    if guess > number:
+        print("wrong")
+        print(" you need to go lower")
+    if guess < number:
+        print("wrong")
+        print("you need to go higher")
+    if guess == number:
+        print(" correct you are right ")
+        break
+    attempts = attempts - 1
+
+
+
 
 
 

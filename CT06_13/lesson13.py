@@ -24,27 +24,26 @@
 #    print(f"Winner #{i + 1} = {box[i]}")
 
 #Task 6
-toppings = []
-toppings.append("sauce")
-toppings.append("Extra Cheese")
-toppings.append("basil")
-toppings.append("cucumber")
-toppings.append("mushrooms")
-toppings.append("carrots")
-toppings.append("tomato")
-toppings.append("corn")
-toppings.append("olives")
-toppings.append("garlic")
-for i in range(len(toppings)):
-    print(f" # { i + 1} = {toppings [i]}")
-order_list = []
-while True:
-    ans = input(" CHoose your topping by number?")
-    if ans == "end":
-        break
-    order_list.append(int(ans))
+# toppings = []
+# toppings.append("sauce")
+# toppings.append("Extra Cheese")
+# toppings.append("basil")
+# toppings.append("cucumber")
+# toppings.append("mushrooms")
+# toppings.append("carrots")
+# toppings.append("tomato")
+# toppings.append("corn")
+# toppings.append("olives")
+# toppings.append("garlic")
+# for i in range(len(toppings)):
+#     print(f" # { i + 1} = {toppings [i]}")
+# order_list = []
+# while True:
+#     ans = input(" CHoose your topping by number?")
+#     if ans == "end":
+#         break
+#     order_list.append(int(ans))
 
 
-for i in range(len(order_list)):
-    print(toppings[order_list[i] - 1])
-
+# for i in range(len(order_list)):
+#     print(toppings[order_list[i] - 1])

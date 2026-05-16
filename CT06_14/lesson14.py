@@ -42,9 +42,10 @@ computer_score = 0
 while player_score < 3 and computer_score < 3:
     computer_choice = random.choice(moves) #computer choose random item in list
     player_choice = input("Choose Scissors, Paper, or Stone: ").lower()
-    print(f"Computer Chose: {computer_choice} ")
+    
                           
     if player_choice in moves:
+        print(f"Computer Chose: {computer_choice} ")
         #win conditions
         if(player_choice == "scissors" and computer_choice == "paper") or (player_choice == "paper" and computer_choice == "stone") or (player_choice == "stone" and computer_choice == "scissors"):
             player_score += 1
@@ -55,6 +56,8 @@ while player_score < 3 and computer_score < 3:
             computer_score += 1
             print("computer wins this round:(")
         print(f"Score - player: {player_score} | Computer: {computer_score}")
+    else:
+        print(" Invalid Move")
 if player_score == 3:
     print(" Final Result: you win :)")
 else:
